@@ -11,7 +11,6 @@ frontend/dist/
 # Environment / IDE
 .env
 .env.*
-.vscode/
 .idea/
 
 # Model weights
@@ -30,3 +29,7 @@ data/*.jpg
 data/*.jpeg
 data/*.ply
 data/*.obj
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore

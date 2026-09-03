@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/InfoPanel.tsx","./src/components/ProjectPanel.tsx","./src/components/StatusBar.tsx","./src/components/ViewerPanel.tsx","./src/hooks/useProject.ts","./src/services/api.ts","./src/types/index.ts"],"errors":true,"version":"5.8.3"}
