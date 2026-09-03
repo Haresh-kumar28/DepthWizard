@@ -1,0 +1,120 @@
+# =========================================
+# DepthWizard - Git Ignore
+# =========================================
+
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# -------------------------
+# Node / Frontend
+# -------------------------
+node_modules/
+dist/
+build/
+.vite/
+.cache/
+
+# TypeScript build cache
+*.tsbuildinfo
+
+# -------------------------
+# Environment / Secrets
+# -------------------------
+.env
+.env.*
+!.env.example
+
+# -------------------------
+# Local application data
+# -------------------------
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+# -------------------------
+# Generated outputs
+# -------------------------
+outputs/
+output/
+results/
+artifacts/
+runs/
+generated/
+
+# -------------------------
+# Logs
+# -------------------------
+*.log
+logs/
+
+# -------------------------
+# OS files
+# -------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -------------------------
+# IDE / Editors
+# -------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# -------------------------
+# Temporary files
+# -------------------------
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# -------------------------
+# Large ML model files
+# -------------------------
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.bin
+
+# Local model directories
+models/*
+backend/models/*
+!backend/models/aerial-depth/
+!backend/models/aerial-depth/README.md
+
+# -------------------------
+# Raster / GIS generated files
+# -------------------------
+*.tif
+*.tiff
+*.jp2
+*.las
+*.laz
+
+# -------------------------
+# Docker local overrides
+# -------------------------
+docker-compose.override.yml
