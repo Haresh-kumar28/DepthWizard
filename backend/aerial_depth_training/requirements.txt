@@ -1,0 +1,9 @@
+torch
+torchvision
+transformers>=4.49
+safetensors
+numpy
+rasterio
+pillow
+scipy
+tqdm

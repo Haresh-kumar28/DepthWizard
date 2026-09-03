@@ -1,0 +1,22 @@
+services:
+  backend:
+    build: {context: ./backend, dockerfile: Dockerfile}
+    ports: ["8000:8000"]
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+    environment:
+      DEPTHWIZARD_DATA_DIR: /app/data
+      DEPTHWIZARD_MODELS_DIR: /app/models
+      DEPTHWIZARD_DEVICE: cpu
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health')"]
+      interval: 20s
+      timeout: 5s
+      retries: 5
+  frontend:
+    build: {context: ./frontend, dockerfile: Dockerfile}
+    ports: ["5173:80"]
+    depends_on:
+      backend:
+        condition: service_healthy

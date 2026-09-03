@@ -1,0 +1,17 @@
+{
+  "model_name": "Aerial-Depth",
+  "status": "NOT_TRAINED",
+  "base_model": "depth-anything/Depth-Anything-V2-Small-hf",
+  "dataset": "REPLACE_WITH_ACTUAL_DATASET",
+  "training_regions": [],
+  "validation_regions": [],
+  "held_out_test_regions": [],
+  "target_semantics": "DSM_elevation_meters",
+  "training_date_utc": null,
+  "checkpoint_sha256": null,
+  "training_config": null,
+  "validation_metrics": null,
+  "held_out_test_metrics": null,
+  "baseline_metrics": null,
+  "improvement": null
+}

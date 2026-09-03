@@ -1,0 +1,6 @@
+name,predicted,reference,landscape
+Urban_01,../data/outputs/URBAN_PROJECT/dsm_metric.tif,../data/reference/urban_01_reference.tif,Urban
+Sparse_01,../data/outputs/SPARSE_PROJECT/dsm_metric.tif,../data/reference/sparse_01_reference.tif,Sparse/Rural
+Hilly_01,../data/outputs/HILLY_PROJECT/dsm_metric.tif,../data/reference/hilly_01_reference.tif,Hilly
+Forest_01,../data/outputs/FOREST_PROJECT/dsm_metric.tif,../data/reference/forest_01_reference.tif,Forested
+Mixed_01,../data/outputs/MIXED_PROJECT/dsm_metric.tif,../data/reference/mixed_01_reference.tif,Mixed
